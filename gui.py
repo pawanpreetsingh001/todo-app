@@ -15,14 +15,12 @@ window = sg.Window('My To-Do App',
                             [input_box,add_button],
                             [list_box,edit_button, complete_button],
                             [exit_button]]],
-                   font = ('Helvetica' , 16))
+                   font = ('Helvetica', 16))
 
 
 while True:
 
     event, value = window.read()
-    print(event)
-    print(value)
     match event:
         case "Add":
             todos = functions.get_todos()
